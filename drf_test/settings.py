@@ -86,13 +86,13 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-db_from_env = dj_database_url.config(conn_max_age=600)
-DATABASES['default'].update(db_from_env)
-DATABASES['default'].config(
+db_from_env = dj_database_url.config(
+    conn_max_age=600,
     default='postgres://jqngjyunlfbcae:db53127d8de00431260bfb6af1c4f5d5177e23d'
     '606d9190f0344235a0bdb8b44@ec2-107-21-214-222.compute-1.amazonaws.com:5432'
     '/d6dambomv1gctg'
 )
+DATABASES['default'].update(db_from_env)
 
 
 # Password validation
