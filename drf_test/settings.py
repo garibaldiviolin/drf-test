@@ -87,10 +87,11 @@ DATABASES = {
     }
 }
 db_from_env = dj_database_url.config(conn_max_age=600)
-DATABASES['default'].update(
-    'postgres://jqngjyunlfbcae:db53127d8de00431260bfb6af1c4f5d5177e23d606d9190'
-    'f0344235a0bdb8b44@ec2-107-21-214-222.compute-1.amazonaws.com:5432/d6dambo'
-    'mv1gctg'
+DATABASES['default'].update(db_from_env)
+DATABASES['default'].config(
+    default='postgres://jqngjyunlfbcae:db53127d8de00431260bfb6af1c4f5d5177e23d'
+    '606d9190f0344235a0bdb8b44@ec2-107-21-214-222.compute-1.amazonaws.com:5432'
+    '/d6dambomv1gctg'
 )
 
 
