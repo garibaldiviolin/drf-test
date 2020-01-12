@@ -25,7 +25,7 @@ SECRET_KEY = 'k8p*dd0=p#-p-5uj5@$i5)n3m*5c*37mi)fj=*+_-6-+w(v*r$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['drf-test-123.herokuapp.com']
+ALLOWED_HOSTS = ['drf-test-123.herokuapp.com', 'http://localhost:8000']
 
 
 # Application definition
